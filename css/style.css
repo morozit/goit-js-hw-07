@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 34px;
+  text-align: center;
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.task-1 {
+  background-color: rgb(249, 250, 174);
+}
+
+.task-2 {
+  background-color: rgb(143, 162, 172);
+}
+
+.task-3 {
+  background-color: rgb(228, 169, 240);
+}
+
+.task-4 {
+  background-color: rgb(192, 253, 200);
+}
+
+.task-5 {
+  background-color: rgb(117, 118, 207);
+}
+
+.task-6 {
+  background-color: rgb(228, 240, 125);
+}
+
+.task-7 {
+  background-color: rgb(100, 155, 187);
+}
+
+#gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-item {
+  max-width: 350px;
+  list-style: none;
+  margin-right: 5px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
