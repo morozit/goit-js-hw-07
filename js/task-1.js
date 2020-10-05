@@ -1,16 +1,31 @@
-'use strict';
+console.log("=======>task-1<=======");
 
-const listCategoriesRef = document.querySelector('#categories');
-const listItemRef = Array.from(document.querySelectorAll('.item'));
+// !  Variant-1
+const categoriesArr = Array.from(
+  document.querySelectorAll("#categories li.item")
+);
+console.log(`В списке ${categoriesArr.length} категории`);
+//  forEach   кожного елементу el
+categoriesArr.forEach((el) => {
+  console.log(`Категория: ${el.firstElementChild.textContent}`);
+  console.log(`Количество элементов: ${el.querySelectorAll("li").length}`);
+});
 
-console.log(`В списке ${listItemRef.length} категории`);
+// !  Variant-2
 
-const getNameCategories = arr => {
-  arr.forEach(item =>
-    console.log(
-      `Категория: ${item.firstElementChild.innerHTML}\nКоличество элементов: ${item.lastElementChild.children.length}`,
-    ),
-  );
-};
+// ("use strict");
 
-getNameCategories(listItemRef);
+// const listCategoriesRef = document.querySelector("#categories");
+// const listItemRef = Array.from(document.querySelectorAll(".item"));
+
+// console.log(`В списке ${listItemRef.length} категории`);
+
+// const getNameCategories = (arr) => {
+//   arr.forEach((item) =>
+//     console.log(
+//       `Категория: ${item.firstElementChild.innerHTML}\nКоличество элементов: ${item.lastElementChild.children.length}`
+//     )
+//   );
+// };
+
+// getNameCategories(listItemRef);
