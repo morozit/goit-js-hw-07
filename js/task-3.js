@@ -1,7 +1,6 @@
 console.log("=======>task-3<=======");
 
-// !  Variant-1
-// ("use strict");
+// TODO:   Дані задачі
 
 const images = [
   {
@@ -21,62 +20,47 @@ const images = [
   },
 ];
 
-const galleryRef = document.querySelector("#gallery");
+// !  Variant-1
+// ("use strict");
+// const galleryRef = document.querySelector("#gallery");
 
-const createGallery = images.map((image) => {
-  const createItem = document.createElement("li");
-  createItem.classList.add("gallery-item");
-  const createImg = document.createElement("img");
-  createImg.src = image.url;
-  createImg.alt = image.alt;
+// const createGallery = images.map((image) => {
+//   const createItem = document.createElement("li");
+//   createItem.classList.add("gallery-item");
+//   const createImg = document.createElement("img");
+//   createImg.src = image.url;
+//   createImg.alt = image.alt;
 
-  createItem.append(createImg);
-  return createItem;
-});
+//   createItem.append(createImg);
+//   return createItem;
+// });
 
-galleryRef.append(...createGallery);
+// galleryRef.append(...createGallery);
 
 // !  Variant-2
 
-// const images = [
-//   {
-//     url:
-//       "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-//     alt: "White and Black Long Fur Cat",
-//   },
-//   {
-//     url:
-//       "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-//     alt: "Orange and White Koi Fish Near Yellow Koi Fish",
-//   },
-//   {
-//     url:
-//       "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-//     alt: "Group of Horses Running",
-//   },
-// ];
-// const galRef = document.querySelector("#gallery");
+const galRef = document.querySelector("#gallery");
 
-// let imgToInsert = images.reduce((acc, { url, alt }) => {
-//   return (acc += `<li><img src=${url} alt='${alt}'></li>`);
-// }, "");
+let imgToInsert = images.reduce((acc, { url, alt }) => {
+  return (acc += `<li><img src=${url} alt='${alt}'></li>`);
+}, "");
 
-// galRef.insertAdjacentHTML("beforeend", imgToInsert);
+galRef.insertAdjacentHTML("beforeend", imgToInsert);
 
-// Object.assign(galRef.style, {
-//   display: "flex",
-//   justifyContent: "center",
-//   flexWrap: "wrap",
-// });
+Object.assign(galRef.style, {
+  display: "flex",
+  justifyContent: "center",
+  flexWrap: "wrap",
+});
 
-// Array.from(galRef.querySelectorAll("img")).map(({ style }) => {
-//   Object.assign(style, {
-//     width: "300px",
-//     height: "200px",
-//     objectFit: "cover",
-//     marginRight: "10px",
-//   });
-// });
+Array.from(galRef.querySelectorAll("img")).map(({ style }) => {
+  Object.assign(style, {
+    width: "300px",
+    height: "200px",
+    objectFit: "cover",
+    marginRight: "10px",
+  });
+});
 
 // ! Variant-3
 
