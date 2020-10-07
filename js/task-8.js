@@ -22,7 +22,7 @@ function createBoxes(amount) {
   let size = 30;
   for (let i = 0; i < amount; i++) {
     const createElement = document.createElement("div");
-    createElement.style.cssText = `width: ${size}px; height: ${size}px; background-color: rgba( ${random()} , ${random()} , ${random()} )`;
+    createElement.style.cssText = `display: inline-block; width: ${size}px; height: ${size}px; background-color: rgba( ${random()} , ${random()} , ${random()} )`;
     boxesRef.appendChild(createElement);
     size += 10;
   }
