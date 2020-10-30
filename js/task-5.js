@@ -11,7 +11,7 @@ console.log("=======>task-5<=======");
 
 //   e.target.value
 //     ? (titleSpanRef.textContent = e.target.value)
-//     : (titleSpanRef.textContent = "незнакомец");
+//     : (titleSpanRef.textContent = "незнайомець");
 // });
 
 // !  Variant-2
