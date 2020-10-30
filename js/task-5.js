@@ -22,5 +22,5 @@ inputRef.addEventListener(
   "input",
   () =>
     (outputNameRef.textContent =
-      inputRef.value.length > 0 ? inputRef.value : "незнакомец")
+      inputRef.value.length > 0 ? inputRef.value : "незнайомець")
 );
