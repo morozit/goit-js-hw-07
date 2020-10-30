@@ -59,6 +59,7 @@ Array.from(galRef.querySelectorAll("img")).map(({ style }) => {
     height: "200px",
     objectFit: "cover",
     marginRight: "10px",
+    marginBottom: "10px",
   });
 });
 
