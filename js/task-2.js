@@ -6,6 +6,7 @@ const ingredients = [
   "Зелень",
   "Приправы",
   "Соль",
+  "Творог",
 ];
 
 console.log("=======>task-2<=======");
@@ -35,6 +36,8 @@ ingredientsRef.append(...arr);
 // ingredientsListRef.append(...newListItem);
 
 
+
+//  виводить `Количество элементов` 0,    а зліва пише правильну к-сть
 const ingredientsArr = Array.from(
   document.querySelectorAll("#ingredients li")
 );
