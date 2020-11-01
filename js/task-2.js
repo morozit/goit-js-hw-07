@@ -24,6 +24,8 @@ const arr = ingredients.map((ingredient) => {
 
 ingredientsRef.append(...arr);
 
+
+
 // !  Variant-2
 
 
@@ -35,13 +37,8 @@ ingredientsRef.append(...arr);
 // });
 // ingredientsListRef.append(...newListItem);
 
+//  Додатково виводить `Количество элементов` 
+
+console.log(`Количество элементов: ${ingredients.length}`);
 
 
-//  виводить `Количество элементов` 0,    а зліва пише правильну к-сть
-const ingredientsArr = Array.from(
-  document.querySelectorAll("#ingredients li")
-);
-
-ingredientsArr.forEach((el) => {
-    console.log(`Количество элементов: ${el.querySelectorAll("li").length}`);
-});
